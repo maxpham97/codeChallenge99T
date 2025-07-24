@@ -1,4 +1,4 @@
-# Issue
+# Issues
 
 -   [x] Move getPriority() outside component - avoids function recreation on every render.
 -   [x] Fix typo in lhsPriority – use balancePriority instead to prevent reference error.
