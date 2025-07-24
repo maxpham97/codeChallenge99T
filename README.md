@@ -1,4 +1,4 @@
-# codeChallenge99T
+# Code Challenge
 
 Hi there,
 This repository represents a technical assignment.
