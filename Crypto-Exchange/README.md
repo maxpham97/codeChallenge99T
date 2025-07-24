@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+# Crypto Exchange Widget ₿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo represents a technical assignment which requires to create a basic crypto exchange widget. Works both ways and has an ability to reverse the exchange.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Deployment Link 🔗](https://test-crypto-exchange-202a9dqls-maxpham97s-projects.vercel.app/)
 
-## Expanding the ESLint configuration
+https://github.com/user-attachments/assets/f096225c-519e-423b-9b04-8054406a6426
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+
+
+
+
+
+## Start application
+
+```bash
+# Clone the repo to an empty directory
+git clone https://github.com/maxpham97/codeChallenge99T.git .
+
+# Install dependencies
+npm install
+
+# Start application  
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Functional requirements
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Main functionality
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   [x] Exchange form with input fields for source and target currency amounts
+-   [x] Ability to select source and target currency pairs from available cryptocurrencies
+-   [x] Display of current exchange rate
+-   [x] Automatic amount calculation when entering values in any of the fields
+
+### Additional features
+
+-   [x] Search by cryptocurrency name and symbol in the currency dropdown list
+-   [x] Validation of entered values, only positive numbers allowed
+-   [x] Loading spinner when receiving rates in each of the numeric inputs
+-   [x] Reverse button that swaps cryptocurrencies when clicked
+
+## Technical requirements
+
+### Technical stack
+
+-   React, TypeScript
+-   Vite
+-   Mantine
+-   Mobx
+-   styled-components
+<img width="689" height="485" alt="Screenshot 2025-07-24 at 16 34 12" src="https://github.com/user-attachments/assets/8e55681d-9916-4e08-95fc-3b50d2e6e1a9" />
